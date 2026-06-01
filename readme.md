@@ -37,6 +37,10 @@ Ejercicio de una landing page deportiva.
 ### Main section 
 <img width="1260" height="1002" alt="image" src="https://github.com/user-attachments/assets/f2fe5f2f-d762-429f-ba26-9689b55f5727" />
 
+### Modal section 
+Se puede abrir desde el login de navbar , en registrate gratis y hazte miembro
+<img width="1211" height="1016" alt="image" src="https://github.com/user-attachments/assets/c76a2e75-85e5-4130-a154-3b5018b3f7e0" />
+
 
 
 
