@@ -1,0 +1,53 @@
+/*Fuente del texto*/
+
+.oswald {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+/*Formato de las tarjetas*/
+.tarjetas {
+    border: 1px solid white;
+    text-align: center;
+}
+
+/*animacion de la imagen*/
+
+.fondo{
+    background-color: #8A96A7;
+}
+
+.playera:hover{
+    transition: all 0.3s ease;
+opacity: 0.5;
+}
+
+/*Formato boton de compra*/
+.btn-buy {
+    background-color: #FF5722;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background-color: #AF3614;
+    color: #8A96A7;
+}
+
+/*Esta parte arregla el movimiento horizontal de las tarjetas*/
+.movimiento {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
