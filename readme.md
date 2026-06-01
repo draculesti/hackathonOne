@@ -62,11 +62,6 @@ This project was created as a frontend practice exercise using Bootstrap compone
 
 ---
 
-## 👩‍💻 Author
-
-- Ivonne Garcia
-
----
 
 ## 📄 License
 
