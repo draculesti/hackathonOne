@@ -37,7 +37,7 @@
 }
 
 .carousel-caption h1 {
-    font-size: 48px; 
+    font-size: 48px;
 }
 
 .carouselBtn {
@@ -55,16 +55,16 @@
     }
 
     .carousel-caption h1 {
-        font-size: 24px; 
+        font-size: 24px;
     }
 
     .carousel-caption p {
-        font-size: 14.4px; 
+        font-size: 14.4px;
     }
 
     .carouselBtn {
         width: 120px;
-        font-size: 14.4px; 
+        font-size: 14.4px;
     }
 }
 
@@ -87,7 +87,7 @@
 .footer-menu a {
     color: #64748b;
     text-decoration: none;
-    font-size: 17.6px; 
+    font-size: 17.6px;
 }
 
 .footer-menu a:hover {
@@ -108,7 +108,7 @@
 
 .banner-btn {
     padding: 16px 32px;
-    font-size: 17.6px; 
+    font-size: 17.6px;
     font-weight: 700;
     border-radius: 5px;
 }
@@ -131,13 +131,13 @@
 
 /*animacion de la imagen*/
 
-.fondo{
+.fondo {
     background-color: #8A96A7;
 }
 
-.playera:hover{
+.playera:hover {
     transition: all 0.3s ease;
-opacity: 0.5;
+    opacity: 0.5;
 }
 
 /*Formato boton de compra*/
@@ -163,4 +163,27 @@ opacity: 0.5;
     overflow-x: auto;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+    justify-items: center;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
