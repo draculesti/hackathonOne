@@ -17,6 +17,41 @@
 </head>
 
 <body>
+  <!-- Modal form Section -->
+  
+  <div class="modal fade" id="authModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h2 class="fw-bold" id="authModalTitle">INICIA SESIÓN O REGÍSTRATE</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-4">Accede a diseños exclusivos, experiencias y ofertas.</p>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="userName">
+              <div id="nameAlert" class="alert alert-danger d-none" role="alert"></div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="text" class="form-control" id="userEmail">
+              <div id="emailAlert" class="alert alert-danger d-none" role="alert"></div>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="termsCheck">
+              <label class="form-check-label">Acepto términos y condiciones</label>
+              <div id="termsAlert" class="alert alert-danger d-none" role="alert"></div>
+            </div>
+            <button type="submit" class="btn btn-light w-100">CONTINUAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
   <!-- Carousel section -->
   <div style="margin-bottom: 40px;">
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -36,8 +71,8 @@
             src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2o2bHVrbG9pZWR6azU3Y3hlZG9mYnMwMW10Y2Nicm92ODEyaGN2YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26uffe1zHZwFHZqyQ/giphy.gif"
             class="d-block w-100" alt="sports">
           <div class="carousel-caption ">
-            <h1>Juega con libertad</h1>
-            <p>Compra en nuestra tienda, donde podrás comprar productos de diferentes marcas.</p>
+            <h1  class="oswaldFont">Juega con libertad</h1>
+            <p>Compra en nuestra tienda, donde podrás adquiere productos de diferentes marcas.</p>
             <div class="d-flex justify-content-center"> <button class="btn btn-info carouselBtn"> Comprar</button></div>
           </div>
         </div>
@@ -46,8 +81,8 @@
             src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHZvMGxoY3VhczFyZGRvM3U5dW5ud2w3NnczMnB1ZXkzeHc1cHY2ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LYXJQHXO65oe4/giphy.gif"
             class="d-block w-100" alt="sports">
           <div class="carousel-caption ">
-            <h1>Corre comodamente</h1>
-            <p>Compra en nuestra tienda, donde podrás comprar productos de diferentes marcas.</p>
+            <h1 class="oswaldFont">Corre comodamente</h1>
+            <p>Compra en nuestra tienda, donde podrás adquiere productos de diferentes marcas.</p>
             <div class="d-flex justify-content-center"> <button class="btn btn-info carouselBtn"> Comprar</button></div>
           </div>
         </div>
@@ -56,8 +91,8 @@
             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHViYzFlMXB6cXhsMzR4dmlhZmhrbGxzbHM5bTAzMjBhOG0ycmR4NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rJxtYAdhOnwAZlR5pW/giphy.gif"
             class="d-block w-100" alt="sports">
           <div class="carousel-caption ">
-            <h1>Con estilo Siempre</h1>
-            <p>Compra en nuestra tienda, donde podrás comprar productos de diferentes marcas..</p>
+            <h1 class="oswaldFont">Con estilo Siempre</h1>
+            <p>Compra en nuestra tienda, donde podrás adquiere productos de diferentes marcas..</p>
             <div class="d-flex justify-content-center"> <button class="btn btn-info carouselBtn"> Comprar</button></div>
           </div>
         </div>
@@ -66,8 +101,8 @@
             src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHo1Y2lsNW0wcXF6aGJzbmpxZGRsajI4eGlnbGxlaTQyaTd1c205cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3D48pgxlnt9XrT4yZc/giphy.gif"
             class="d-block w-100" alt="...">
           <div class="carousel-caption ">
-            <h1>Te acompañamos en el mundial</h1>
-            <p>Compra en nuestra tienda, donde podrás comprar productos de diferentes marcas.</p>
+            <h1 class="oswaldFont">Te acompañamos en el mundial</h1>
+            <p>Compra en nuestra tienda, donde podrás adquiere productos de diferentes marcas.</p>
             <div class="d-flex justify-content-center"> <button class="btn btn-info carouselBtn"> Comprar</button></div>
           </div>
         </div>
@@ -129,7 +164,15 @@
 
     </div>
   </div>
-
+  <!-- Video Secttion -->
+  <div class="video-wrapper">
+    <video autoplay muted loop playsinline poster="#">
+      <source
+        src="https://brand.assets.adidas.com/video/upload/f_auto:video,q_auto/if_w_gt_1920,w_1920/FY_26_BRAND_WC_MYTH_16x9_30_CLEAN_a405ee1e2b.mp4"
+        type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </div>
   <!-- Camisetas Section -->
   <h2 class="oswaldFont">APOYA A TU SELECCION FAVORITA</h2>
 
@@ -230,7 +273,7 @@
         src="https://static.nike.com/a/images/t_web_pdp_936_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/0c2ecdfd-df75-4d38-b6de-76a3bfa117e4/NIKE+CORTEZ.png"
         class="card-img-top" alt="nike">
       <div class="card-body">
-        <p class="card-text"><b>Nike</b></p>
+        <p class="card-text"><b>NIKE</b></p>
       </div>
     </div>
     <div class="card card-hover">
@@ -238,7 +281,7 @@
         src="https://images.puma.com/image/upload/f_auto,q_auto,w_600,b_rgb:FAFAFA/global/399028/36/sv01/fnd/MEX/fmt/png"
         class="card-img-top" alt="puma">
       <div class="card-body">
-        <p class="card-text"><b>Puma</b></p>
+        <p class="card-text"><b>PUMA</b></p>
       </div>
     </div>
 
@@ -246,7 +289,7 @@
       <img src="https://www.calzzasport.com/cdn/shop/files/09JNUJ-1.jpg?v=1746292782" class="card-img-top"
         alt="underArmor">
       <div class="card-body">
-        <p class="card-text"><b>Under Armor</b></p>
+        <p class="card-text"><b>UNDER ARMOR</b></p>
       </div>
     </div>
     <div class="card card-hover">
@@ -254,7 +297,7 @@
         src="https://files.plytix.com/api/v1.1/rn/public_files/pim/assets/26/27/60/67/6760272625376d00089f5480/images/20/e1/ca/69/69cae120e79e5719e49d81f5/JPG-100244696_SLC_eCom_z3yyle.jpg/JPG-100244696_SLC_eCom_z3yyle.jpg?s=600x&t=JPEG"
         class="card-img-top" alt="reebok">
       <div class="card-body">
-        <p class="card-text"><b>Reebok</b></p>
+        <p class="card-text"><b>REEBOK</b></p>
       </div>
     </div>
     <div class="card card-hover">
@@ -267,10 +310,10 @@
     </div>
 
     <div class="card card-hover">
-      <img src="https://mondodimoto.com/cdn/shop/files/7503048342949-1-2185.jpg?v=1779740522" class="card-img-top"
+      <img src="https://alubike.com.mx/cdn/shop/files/Bicicletas_para_monta_a.jpg?v=1755724443&width=1296" class="card-img-top"
         alt="vento">
       <div class="card-body">
-        <p class="card-text"><b>VENTO</b></p>
+        <p class="card-text"><b>ALU BIKE</b></p>
       </div>
     </div>
     <div class="card card-hover">
@@ -343,7 +386,7 @@
           ÚNETE AL CLUB Y RECIBE 500 PUNTOS DE BIENVENIDA
         </h2>
 
-        <a href="#" class="btn btn-light banner-btn">
+        <a  class="btn btn-light banner-btn" data-bs-toggle="modal" data-bs-target="#authModal">
           REGÍSTRATE GRATIS →
         </a>
 
@@ -402,6 +445,7 @@
             <a id="links" href="https://www.nike.com/mx/retail" class="text-decoration-none" target="_blank">Buscar
               tiendas cerca de ti</a>
             <a id="links"
+              data-bs-toggle="modal" data-bs-target="#authModal"
               href="https://accounts.nike.com/lookup?client_id=4fd2d5e7db76e0f85a6bb56721bd51df&redirect_uri=https://www.nike.com/auth/login&response_type=code&scope=openid%20nike.digital%20profile%20email%20phone%20flow%20country&state=cc2641af271d473285b91d008191e6a3&ui_locales=es-MX&code_challenge=H386TXotJdrAN22WPLLQYq0s66DDt3TuhURbIwBRIas&code_challenge_method=S256"
               class="text-decoration-none" target="_blank">Hazte Miembro</a>
           </p>
@@ -456,7 +500,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="./js/modal.js"></script>
 
 </body>
 
