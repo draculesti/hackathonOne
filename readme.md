@@ -9,6 +9,8 @@ Ejercicio de una landing page deportiva.
 -
 -
 -
+-
+-
 
 ## 🚀 Technologies Used
 
