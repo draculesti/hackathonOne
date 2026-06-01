@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú de Círculos,Responsive</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .menu-container {
+      padding: 60px 0;
+    }
+    
+    /* Contenedor individual de cada categoría */
+    .category-item {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      margin: 0 auto;
+      /* Limitamos el tamaño máximo para que en computadoras grandes no crezca infinitamente */
+      max-width: 160px; 
+      transition: transform 0.3s ease;
+    }
+
+    .category-item:hover {
+      transform: translateY(-5px); /* Efecto de elevación moderna */
+      color: #000;
+    }
+
+    /* Imagen circular adaptativa */
+    .circle-img {
+      width: 100%;          /* Ocupa el 100% del ancho de su contenedor (max 160px) */
+      height: auto;         /* Mantiene la proporción */
+      aspect-ratio: 1 / 1;  /* Fuerza a que siempre sea un cuadrado perfecto antes de ser círculo */
+      object-fit: cover;    /* Corta la imagen perfectamente al centro sin deformarla */
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave estética */
+    }
+
+    /* Texto debajo */
+    .category-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container menu-container text-center">
+    <h2 class="mb-5 fw-bold text-uppercase">🔥 Hot Sale Para Todos 🔥</h2>
+
+    <div class="row justify-content-center g-3 g-md-4">
+      
+      <div class="col-6 col-md-3">
+        <a href="#" class="category-item">
+          <img src="niños.jpg" class="rounded-circle circle-img" alt="Niños">
+          <div class="category-title">Niños</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="#" class="category-item">
+          <img src="niñas.jpg" class="rounded-circle circle-img" alt="Niñas">
+          <div class="category-title">Niñas</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="#" class="category-item">
+          <img src="mujeres.jpg" class="rounded-circle circle-img" alt="Damas">
+          <div class="category-title">Damas</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="#" class="category-item">
+          <img src="hombres.jpg" class="rounded-circle circle-img" alt="Caballeros">
+          <div class="category-title">Caballeros</div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
