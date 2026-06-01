@@ -4,7 +4,7 @@ Ejercicio de una landing page deportiva.
 
 ---
 
-##Team 
+## Team 
 -
 -
 -
