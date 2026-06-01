@@ -1,0 +1,16 @@
+#links:hover{
+    color: #FF5722;
+}
+footer a {
+    color: #0F172A;
+}
+#imgFooter{
+    height: 40px;
+}
+#pagoImg{
+    height: 30px;
+}
+footer h5{
+      color: #0F172A;
+    font-weight: 700;
+}
