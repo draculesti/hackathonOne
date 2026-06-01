@@ -1,5 +1,3 @@
-
-
 #carouselExampleCaptions {
     max-width: 100%;
 }
@@ -16,56 +14,102 @@
     }
 }
 
-.carouselBtn{
-  background-color: #ff5722;
+.carouselBtn {
+    background-color: #ff5722;
 }
 
-.carouselBtn:hover{
-  background-color:#ff5622ce
+.carouselBtn:hover {
+    background-color: #ff5622ce;
 }
 
-.carrouselLabel{
-  color: white;
-  border: 3px;
+.carrouselLabel {
+    color: white;
+    border: 3px;
 }
 
 .carousel-item img {
-  height: 70vh;
-  object-fit: cover;
+    height: 70vh;
+    object-fit: cover;
 }
 
 .carousel-caption {
-  bottom: 20%;
+    bottom: 20%;
 }
 
 .carousel-caption h1 {
-  font-size: 3rem;
+    font-size: 48px; 
 }
 
 .carouselBtn {
-  width: 150px;
+    width: 150px;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .carousel-item img {
-    height: 50vh;
-  }
+    .carousel-item img {
+        height: 50vh;
+    }
 
-  .carousel-caption {
-    bottom: 10%;
-  }
+    .carousel-caption {
+        bottom: 10%;
+    }
 
-  .carousel-caption h1 {
-    font-size: 1.5rem;
-  }
+    .carousel-caption h1 {
+        font-size: 24px; 
+    }
 
-  .carousel-caption p {
-    font-size: 0.9rem;
-  }
+    .carousel-caption p {
+        font-size: 14.4px; 
+    }
 
-  .carouselBtn {
-    width: 120px;
-    font-size: 0.9rem;
-  }
+    .carouselBtn {
+        width: 120px;
+        font-size: 14.4px; 
+    }
+}
+
+.footer-menu {
+    background-color: #0f172a;
+    padding: 60px 40px;
+}
+
+.footer-menu h3 {
+    color: #ff5722;
+    font-size: 24px; /* 1.5rem */
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.footer-menu ul li {
+    margin-bottom: 20px;
+}
+
+.footer-menu a {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 17.6px; /* 1.1rem */
+}
+
+.footer-menu a:hover {
+    color: #ff5722;
+}
+
+.club-banner {
+    background-color: #4b8b6b;
+    padding: 64px 0; /* 4rem */
+}
+
+.banner-title {
+    color: white;
+    /* clamp(24px, 3vw, 48px) */
+    font-size: clamp(24px, 3vw, 48px);
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.banner-btn {
+    padding: 16px 32px; /* 1rem 2rem */
+    font-size: 17.6px; /* 1.1rem */
+    font-weight: 700;
+    border-radius: 5px;
 }
