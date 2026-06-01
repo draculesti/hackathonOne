@@ -192,3 +192,58 @@
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
+
+#links:hover{
+    color: #FF5722;
+}
+footer a {
+    color: #0F172A;
+}
+#imgFooter{
+    height: 40px;
+}
+#pagoImg{
+    height: 30px;
+}
+footer h5{
+      color: #0F172A;
+    font-weight: 700;
+}
+
+.menu-container {
+      padding: 60px 0;
+    }
+    
+    /* Contenedor individual de cada categoría */
+    .category-item {
+      text-decoration: none;
+      color: #000;
+      display: block;
+      margin: 0 auto;
+      /* Limitamos el tamaño máximo para que en computadoras grandes no crezca infinitamente */
+      max-width: 160px; 
+      transition: transform 0.3s ease;
+    }
+
+    .category-item:hover {
+      transform: translateY(-5px); /* Efecto de elevación moderna */
+      color: #000;
+    }
+
+   
+    .circle-img {
+      width: 100%;          
+      height: auto;         
+      aspect-ratio: 1 / 1;  
+      object-fit: cover;    
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    }
+
+
+    .category-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      margin-top: 12px;
+    }
